@@ -11,5 +11,8 @@
   --color-primary-600: #c15711;
   --color-gray-100: #495057;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
 /* font-family: 'DM Mono', monospace;
 font-family: 'Roboto', sans-serif; */

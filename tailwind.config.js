@@ -20,6 +20,14 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
+      borderRadius: {
+        xs: "0.2rem",
+        sm: "0.4rem",
+        md: "0.6rem",
+        lg: "0.8rem",
+        xl: "1rem",
+        "2xl": "1.2rem",
+      },
     },
   },
   plugins: [],

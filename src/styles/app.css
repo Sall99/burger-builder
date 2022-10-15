@@ -454,8 +454,34 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.font-roboto {
-  font-family: Roboto, sans-serif;
+.h-10 {
+  height: 2.5rem;
+}
+.w-16 {
+  width: 4rem;
+}
+.w-32 {
+  width: 8rem;
+}
+.rounded-sm {
+  border-radius: 0.4rem;
+}
+.rounded-xs {
+  border-radius: 0.2rem;
+}
+.border-0 {
+  border-width: 0px;
+}
+.bg-primary-200 {
+  background-color: var(--color-primary-200);
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 :root {
@@ -467,5 +493,15 @@ video {
   --color-primary-600: #c15711;
   --color-gray-100: #495057;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
 /* font-family: 'DM Mono', monospace;
 font-family: 'Roboto', sans-serif; */
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
