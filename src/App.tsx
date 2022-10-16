@@ -1,7 +1,14 @@
+import { Routes, Route } from "react-router-dom";
+import { routesList } from "routes";
+
 function App() {
   return (
-    <div className="App">
-      <div></div>
+    <div>
+      <Routes>
+        {routesList.map((route) => (
+          <Route key={route.path} path={route.path} element={route.element} />
+        ))}
+      </Routes>
     </div>
   );
 }
