@@ -454,6 +454,9 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.mt-16 {
+  margin-top: 4rem;
+}
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -525,12 +528,12 @@ video {
 .tracking-wide {
   letter-spacing: 0.025em;
 }
+.text-primary-200 {
+  color: var(--color-primary-200);
+}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-primary-200 {
-  color: var(--color-primary-200);
 }
 
 :root {
@@ -565,6 +568,52 @@ body {
   border-radius: 20px;
   border: transparent;
 }
+.controls {
+  background-color: var(--color-primary-300);
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+.controls div {
+  display: flex;
+  justify-content: space-between;
+}
+.controls div p {
+  font-size: 0.9rem;
+  color: var(--color-primary-200);
+  pointer-events: none;
+}
+.controls .ctrl {
+  display: flex;
+}
+.controls .ctrl div {
+  width: 2rem;
+  height: 1.5rem;
+  border: none;
+  border: 0.1rem solid #d3732eaf;
+  border-radius: 0.3rem;
+  transition: all ease 0.2s;
+  color: #c15711;
+  font-size: 1rem;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem 0.5rem 1rem;
+}
+.controls .ctrl div:hover {
+  background-color: #d3732eaf;
+  color: white;
+  cursor: pointer;
+}
+/* media queries */
+@media (max-width: 768px) {
+  .burger-builder {
+    width: 100%;
+  }
+}
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -576,6 +625,10 @@ body {
   outline-offset: 2px;
 }
 @media (min-width: 640px) {
+
+  .sm\:mt-8 {
+    margin-top: 2rem;
+  }
 
   .sm\:px-16 {
     padding-left: 4rem;
