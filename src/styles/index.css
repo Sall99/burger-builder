@@ -34,6 +34,7 @@ body {
   border-radius: 20px;
   border: transparent;
 }
+
 .controls {
   background-color: var(--color-primary-300);
   max-width: 50rem;
@@ -74,7 +75,10 @@ body {
   color: white;
   cursor: pointer;
 }
+
 /* media queries */
+
+
 @media (max-width: 768px) {
   .burger-builder {
     width: 100%;
