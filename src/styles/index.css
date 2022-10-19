@@ -34,3 +34,10 @@ body {
   border-radius: 20px;
   border: transparent;
 }
+/* media queries */
+
+@media (max-width: 768px) {
+  .burger-builder {
+    width: 100%;
+  }
+}

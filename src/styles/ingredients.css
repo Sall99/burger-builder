@@ -111,3 +111,11 @@
   margin: 1.5% auto;
 }
 /* media queries */
+@media (max-width: 768px) {
+  .BreadBottom {
+    width: 75%;
+  }
+  .BreadTop {
+    width: 75%;
+  }
+}
