@@ -607,7 +607,9 @@ body {
   background-color: #d3732eaf;
   color: white;
   cursor: pointer;
+  transform: scale(1.1);
 }
+
 /* media queries */
 @media (max-width: 768px) {
   .burger-builder {
@@ -628,6 +630,18 @@ body {
 
   .sm\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .sm\:mt-4 {
+    margin-top: 1rem;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .sm\:mt-1 {
+    margin-top: 0.25rem;
   }
 
   .sm\:px-16 {

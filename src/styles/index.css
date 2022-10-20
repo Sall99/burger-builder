@@ -73,7 +73,9 @@ body {
   background-color: #d3732eaf;
   color: white;
   cursor: pointer;
+  transform: scale(1.1);
 }
+
 /* media queries */
 @media (max-width: 768px) {
   .burger-builder {
