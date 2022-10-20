@@ -14,7 +14,7 @@ export const Builder: FC<BuilderProps> = ({ ingredients }) => {
     }, []);
 
   return (
-    <div className="burger-builder mt-16 sm:mt-8">
+    <div className="burger-builder mt-16 sm:mt-1">
       <BurgerIngredients type="BreadTop" />
       {arrayIngredients.length === 0 && (
         <div className="flex items-center flex-col">

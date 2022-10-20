@@ -14,7 +14,7 @@ export const Home = () => {
       <section className="flex justify-center">
         <Builder ingredients={ingredients} />
       </section>
-      <section>
+      <section className="px-8 sm:px-16">
         <Controls />
       </section>
     </>
