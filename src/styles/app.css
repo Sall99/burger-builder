@@ -454,11 +454,19 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
 .mt-16 {
   margin-top: 4rem;
+
+.mt-8 {
+  margin-top: 2rem;
+
 }
 .mt-1 {
   margin-top: 0.25rem;
+}
+.mt-16 {
+  margin-top: 4rem;
 }
 .flex {
   display: flex;
@@ -574,7 +582,10 @@ body {
   border: transparent;
 }
 
+
 /* CONTROLS */
+
+
 .controls {
   background-color: var(--color-primary-300);
   max-width: 50rem;
@@ -645,24 +656,36 @@ tbody tr td {
 }
 
 /* media queries */
+=======
+/* media queries */
+
+
 @media (max-width: 768px) {
   .burger-builder {
     width: 100%;
   }
 }
+
+
+
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
+
 .hover\:bg-primary-600:hover {
   background-color: var(--color-primary-600);
 }
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
 @media (min-width: 640px) {
 
   .sm\:mt-1 {

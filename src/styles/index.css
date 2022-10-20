@@ -37,7 +37,10 @@ body {
   border: transparent;
 }
 
+
 /* CONTROLS */
+
+
 .controls {
   background-color: var(--color-primary-300);
   max-width: 50rem;
@@ -108,6 +111,8 @@ tbody tr td {
 }
 
 /* media queries */
+
+
 @media (max-width: 768px) {
   .burger-builder {
     width: 100%;
