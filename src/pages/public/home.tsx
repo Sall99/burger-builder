@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Builder, Controls, Total } from "components";
+import { Builder, Controls, Total, TotalMobile } from "components";
 import { IngredientTypes } from "@types";
 
 export const Home = () => {
@@ -11,9 +11,10 @@ export const Home = () => {
   });
   return (
     <>
-      <section className="flex px-8 sm:px-16">
+      <section className="flex flex-col items-center px-8 sm:px-16 justify-center relative">
         <Total />
         <Builder ingredients={ingredients} />
+        <TotalMobile />
       </section>
       <section className="px-8 sm:px-16">
         <Controls />

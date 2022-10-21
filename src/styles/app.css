@@ -454,25 +454,35 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.left-16 {
+  left: 4rem;
+}
+.top-0 {
+  top: 0px;
+}
 .mt-16 {
   margin-top: 4rem;
-
-.mt-8 {
-  margin-top: 2rem;
-
 }
 .mt-1 {
   margin-top: 0.25rem;
 }
-.mt-16 {
-  margin-top: 4rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 .flex {
   display: flex;
 }
 .table {
   display: table;
+}
+.hidden {
+  display: none;
 }
 .h-8 {
   height: 2rem;
@@ -507,9 +517,6 @@ video {
 .border-0 {
   border-width: 0px;
 }
-.bg-primary-600 {
-  background-color: var(--color-primary-600);
-}
 .bg-primary-200 {
   background-color: var(--color-primary-200);
 }
@@ -524,6 +531,10 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-base {
   font-size: 1rem;
@@ -582,9 +593,7 @@ body {
   border: transparent;
 }
 
-
 /* CONTROLS */
-
 
 .controls {
   background-color: var(--color-primary-300);
@@ -656,18 +665,12 @@ tbody tr td {
 }
 
 /* media queries */
-=======
-/* media queries */
-
 
 @media (max-width: 768px) {
   .burger-builder {
     width: 100%;
   }
 }
-
-
-
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
@@ -695,5 +698,16 @@ tbody tr td {
   .sm\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 }
