@@ -111,6 +111,8 @@
   margin: 1.5% auto;
 }
 
+/* Media queries */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .BreadBottom {
     width: 60%;
@@ -118,16 +120,6 @@
   .BreadTop {
     width: 60%;
   }
-=======
-/* media queries */
-@media (max-width: 768px) {
-  /* .BreadBottom {
-    width: 75%;
-  }
-  .BreadTop {
-    width: 75%;
-  } */
-
 }
 
 @media (max-width: 500px) {

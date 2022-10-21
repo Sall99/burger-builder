@@ -37,7 +37,6 @@ body {
   border: transparent;
 }
 
-<
 /* CONTROLS */
 
 .controls {
@@ -80,7 +79,6 @@ body {
   color: white;
   cursor: pointer;
   transform: scale(1.1);
-
 }
 
 /* TOTAL */
@@ -108,10 +106,7 @@ thead tr th {
 }
 tbody tr td {
   font-size: 0.9rem;
-
 }
-
-
 
 /* media queries */
 
