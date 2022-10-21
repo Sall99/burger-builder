@@ -481,9 +481,11 @@ video {
 .table {
   display: table;
 }
+
 .hidden {
   display: none;
 }
+
 .h-8 {
   height: 2rem;
 }
@@ -516,6 +518,9 @@ video {
 }
 .border-0 {
   border-width: 0px;
+}
+.bg-primary-600 {
+  background-color: var(--color-primary-600);
 }
 .bg-primary-200 {
   background-color: var(--color-primary-200);
@@ -634,6 +639,7 @@ body {
   color: white;
   cursor: pointer;
   transform: scale(1.1);
+
 }
 
 /* TOTAL */
@@ -662,6 +668,10 @@ thead tr th {
 tbody tr td {
   font-size: 0.9rem;
 }
+
+/* media queries */
+=======
+/* media queries */
 
 /* media queries */
 

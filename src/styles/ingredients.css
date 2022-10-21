@@ -118,6 +118,16 @@
   .BreadTop {
     width: 60%;
   }
+=======
+/* media queries */
+@media (max-width: 768px) {
+  /* .BreadBottom {
+    width: 75%;
+  }
+  .BreadTop {
+    width: 75%;
+  } */
+
 }
 
 @media (max-width: 500px) {
