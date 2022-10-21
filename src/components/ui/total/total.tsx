@@ -1,11 +1,9 @@
-
 import { BiDollar } from "react-icons/bi";
 import { Button } from "../button";
 
 export const Total = () => {
   return (
     <div className="total-order absolute left-16 top-0 hidden md:block">
-
       <table>
         <thead>
           <tr>
@@ -35,7 +33,6 @@ export const Total = () => {
             <td className="price">
               <BiDollar />
             </td>
-
           </tr>
           <tr>
             <td>
