@@ -460,9 +460,6 @@ video {
 .relative {
   position: relative;
 }
-.left-4 {
-  left: 1rem;
-}
 .left-16 {
   left: 4rem;
 }
@@ -535,6 +532,10 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -542,14 +543,6 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
-}
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 .font-normal {
   font-weight: 400;
@@ -671,24 +664,30 @@ tbody tr td {
 }
 
 /* media queries */
+
 @media (max-width: 768px) {
   .burger-builder {
     width: 100%;
   }
 }
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
+
 .hover\:bg-primary-600:hover {
   background-color: var(--color-primary-600);
 }
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
+
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
+
 @media (min-width: 640px) {
 
   .sm\:mt-1 {
@@ -700,6 +699,7 @@ tbody tr td {
     padding-right: 4rem;
   }
 }
+
 @media (min-width: 768px) {
 
   .md\:block {
