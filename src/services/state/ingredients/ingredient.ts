@@ -7,6 +7,13 @@ const initialState = {
     cheese: 0,
     meat: 0,
   } as { [key: string]: number },
+  prices: {
+    salad: 0.5,
+    bacon: 0.7,
+    cheese: 0.4,
+    meat: 1.3,
+  } as { [key: string]: number },
+  totalPrice: 4,
 };
 
 const ingredientSlice = createSlice({
@@ -16,6 +23,7 @@ const ingredientSlice = createSlice({
     addIngredients(state, action) {
       const { payload } = action;
       state.ingredients[payload] += 1;
+      state.totalPrice += state.prices[payload];
 
       return state;
     },
@@ -23,6 +31,7 @@ const ingredientSlice = createSlice({
       const { payload } = action;
       if (state.ingredients[payload] > 0) {
         state.ingredients[payload] -= 1;
+        state.totalPrice -= state.prices[payload];
       }
 
       return state;
