@@ -21,7 +21,9 @@ const ingredientSlice = createSlice({
     },
     removeIngredients(state, action) {
       const { payload } = action;
-      state.ingredients[payload] -= 1;
+      if (state.ingredients[payload] > 0) {
+        state.ingredients[payload] -= 1;
+      }
 
       return state;
     },
