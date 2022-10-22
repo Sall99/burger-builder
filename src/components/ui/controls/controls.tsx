@@ -1,7 +1,10 @@
+import { useDispatch } from "react-redux";
 import { MdAdd } from "react-icons/md";
 import { AiOutlineMinus } from "react-icons/ai";
+import { addIngredients, removeIngredients } from "services";
 
 export const Controls = () => {
+  const dispatch = useDispatch();
   const controls = [
     { label: "Meat", type: "meat" },
     { label: "Bacon", type: "bacon" },
@@ -18,10 +21,12 @@ export const Controls = () => {
               <p className="label">{ctrl.label}</p>
               <div className="ctrl">
                 <div>
-                  <MdAdd />
+                  <MdAdd onClick={() => dispatch(addIngredients(ctrl.type))} />
                 </div>
                 <div>
-                  <AiOutlineMinus />
+                  <AiOutlineMinus
+                    onClick={() => dispatch(removeIngredients(ctrl.type))}
+                  />
                 </div>
               </div>
             </div>
