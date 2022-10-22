@@ -20,13 +20,11 @@ export const Controls = () => {
             <div key={ctrl.label}>
               <p className="label">{ctrl.label}</p>
               <div className="ctrl">
-                <div>
-                  <MdAdd onClick={() => dispatch(addIngredients(ctrl.type))} />
+                <div onClick={() => dispatch(addIngredients(ctrl.type))}>
+                  <MdAdd />
                 </div>
-                <div>
-                  <AiOutlineMinus
-                    onClick={() => dispatch(removeIngredients(ctrl.type))}
-                  />
+                <div onClick={() => dispatch(removeIngredients(ctrl.type))}>
+                  <AiOutlineMinus />
                 </div>
               </div>
             </div>
