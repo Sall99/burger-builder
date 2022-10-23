@@ -523,10 +523,6 @@ video {
 .bg-primary-200 {
   background-color: var(--color-primary-200);
 }
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
 .bg-primary-300 {
   background-color: var(--color-primary-300);
 }
@@ -688,18 +684,6 @@ tbody tr td {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
-}
-
-.hover\:cursor-move:hover {
-  cursor: move;
-}
-
-.hover\:cursor-not-allowed:hover {
-  cursor: not-allowed;
-}
-
-.hover\:cursor-none:hover {
-  cursor: none;
 }
 
 .hover\:bg-primary-600:hover {
