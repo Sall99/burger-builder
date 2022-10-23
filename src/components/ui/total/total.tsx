@@ -1,10 +1,14 @@
+import clsx from "clsx";
 import { BiDollar } from "react-icons/bi";
 import { useSelector } from "react-redux";
+import { totalFormatter } from "utils";
 import { Button } from "../button";
 
 export const Total = () => {
-  const { ingredients } = useSelector((state: any) => state.ingredients);
-  const { totalPrice } = useSelector((state: any) => state.ingredients);
+  const { ingredients, totalPrice } = useSelector(
+    (state: any) => state.ingredients
+  );
+
   const { meat, salad, bacon, cheese } = ingredients;
 
   return (
@@ -36,12 +40,19 @@ export const Total = () => {
           <tr>
             <td className="price py-5">Total</td>
             <td className="price flex items-center gap-1 py-5">
-              <span>{totalPrice}</span> <BiDollar />
+              <span>{totalFormatter.format(totalPrice)}</span> <BiDollar />
             </td>
           </tr>
           <tr>
             <td>
-              <Button label="Order" className="w-20 h-8" />
+              <Button
+                label="Order"
+                className={clsx(
+                  "w-20 h-8",
+                  totalPrice <= 4 && "bg-primary-300  hover:bg-primary-300"
+                )}
+                disabled={totalPrice <= 4}
+              />
             </td>
           </tr>
         </tbody>
