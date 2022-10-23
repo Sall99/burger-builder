@@ -4,12 +4,3 @@ export interface IngredientTypes {
 export interface BuilderProps {
   ingredients: IngredientTypes;
 }
-
-export interface StateProps {
-  ingredients: {
-    salad: number;
-    bacon: number;
-    cheese: number;
-    meat: number;
-  };
-}

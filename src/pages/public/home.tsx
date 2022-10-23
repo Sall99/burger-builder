@@ -1,11 +1,9 @@
-import { StateProps } from "@types";
 import { Builder, Controls, Total, TotalMobile } from "components";
 import { useSelector } from "react-redux";
+import { AnyAction } from "redux";
 
 export const Home = () => {
-  const { ingredients } = useSelector(
-    (state: StateProps | any) => state.ingredients
-  );
+  const { ingredients } = useSelector((state: AnyAction) => state.ingredients);
 
   return (
     <>
