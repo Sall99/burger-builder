@@ -523,6 +523,13 @@ video {
 .bg-primary-200 {
   background-color: var(--color-primary-200);
 }
+.bg-slate-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+.bg-primary-300 {
+  background-color: var(--color-primary-300);
+}
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -683,8 +690,24 @@ tbody tr td {
   cursor: pointer;
 }
 
+.hover\:cursor-move:hover {
+  cursor: move;
+}
+
+.hover\:cursor-not-allowed:hover {
+  cursor: not-allowed;
+}
+
+.hover\:cursor-none:hover {
+  cursor: none;
+}
+
 .hover\:bg-primary-600:hover {
   background-color: var(--color-primary-600);
+}
+
+.hover\:bg-primary-300:hover {
+  background-color: var(--color-primary-300);
 }
 
 .hover\:underline:hover {
