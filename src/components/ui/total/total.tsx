@@ -1,12 +1,13 @@
 import clsx from "clsx";
 import { BiDollar } from "react-icons/bi";
 import { useSelector } from "react-redux";
+import { AnyAction } from "redux";
 import { totalFormatter } from "utils";
 import { Button } from "../button";
 
 export const Total = () => {
   const { ingredients, totalPrice } = useSelector(
-    (state: any) => state.ingredients
+    (state: AnyAction) => state.ingredients
   );
 
   const { meat, salad, bacon, cheese } = ingredients;
