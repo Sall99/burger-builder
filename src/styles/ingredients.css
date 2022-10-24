@@ -120,13 +120,43 @@
   .BreadTop {
     width: 60%;
   }
+  .Meat {
+    width: 60%;
+  }
+  .Salad {
+    width: 60%;
+  }
+  .Bacon {
+    width: 60%;
+  }
+  .Cheese {
+    width: 65%;
+  }
 }
 
 @media (max-width: 500px) {
   .BreadBottom {
     width: 75%;
+    margin-top: 7px;
   }
   .BreadTop {
     width: 75%;
+    margin-bottom: 7px;
+  }
+  .Meat {
+    width: 75%;
+    margin-bottom: 4px;
+  }
+  .Salad {
+    width: 75%;
+    margin-bottom: 4px;
+  }
+  .Bacon {
+    width: 75%;
+    margin-bottom: 4px;
+  }
+  .Cheese {
+    width: 80%;
+    margin-bottom: 4px;
   }
 }
