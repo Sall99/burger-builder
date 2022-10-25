@@ -1,10 +1,12 @@
 import { FC } from "react";
 import { Button, Icon } from "components";
 import { WrapperProps } from "@types";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { publicRoutes } from "routes";
 
 export const Wrapper: FC<WrapperProps> = ({ children, h1 }) => {
+  const { pathname } = useLocation();
+
   return (
     <div className="m-14">
       <div>
@@ -28,8 +30,27 @@ export const Wrapper: FC<WrapperProps> = ({ children, h1 }) => {
       {children}
       <Button label="Create Account" className="w-full h-10" />
       <h2 className="mt-5 text-xs text-gray-300 tracking-wider">
-        Already have an account?{" "}
-        <Link to={publicRoutes.signUp.path}>Log in</Link>
+        {pathname === "/sign-up" ? (
+          <span>
+            Already have an account ?{" "}
+            <Link
+              to={publicRoutes.signIn.path}
+              className="text-primary-100 hover:underline"
+            >
+              Sign in
+            </Link>
+          </span>
+        ) : (
+          <span>
+            Do not have an account ?{" "}
+            <Link
+              to={publicRoutes.signUp.path}
+              className="text-primary-100 hover:underline"
+            >
+              Sign up
+            </Link>
+          </span>
+        )}
       </h2>
     </div>
   );
