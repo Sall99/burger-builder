@@ -15,12 +15,6 @@ export const Total = () => {
   return (
     <div className="total-order absolute left-16 top-0 hidden md:block">
       <table>
-        <thead>
-          <tr>
-            <th>Ingredients</th>
-            <th>Price</th>
-          </tr>
-        </thead>
         <tbody>
           <tr>
             <td>Meat</td>
