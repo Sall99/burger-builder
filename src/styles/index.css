@@ -10,6 +10,9 @@
   --color-primary-500: #c15711cc;
   --color-primary-600: #c15711;
   --color-gray-100: #495057;
+  --color-gray-200: rgba(201, 201, 201, 1);
+  --color-gray-300: rgba(157, 157, 157, 1);
+  --color-gray-400: rgba(163, 163, 163, 1);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -99,7 +102,6 @@ body {
 .total-order table .price {
   font-size: 0.9rem;
   font-weight: 600;
-  /* padding-top: 1rem; */
 }
 thead tr th {
   font-size: 0.9rem;
@@ -108,6 +110,59 @@ tbody tr td {
   font-size: 0.9rem;
 }
 
+/* Auth buttons */
+.log-with-btn {
+  width: 188px;
+  height: 45px;
+  border: 1px solid var(--color-gray-200);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 17px;
+  font-size: 13px;
+}
+
+/* Input */
+.inputField {
+  position: relative;
+}
+
+.inputField input {
+  padding: 8px 0px;
+  padding-top: 18px;
+}
+
+.inputField span {
+  pointer-events: none;
+  opacity: 0.5;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  top: 45%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: text;
+}
+
+.inputField input:focus + span,
+.inputField input:not(:placeholder-shown) + span {
+  top: 5px;
+  -webkit-transform: scale(0.7) translateY(-10%) translateX(-8.5px);
+  transform: scale(0.7) translateY(-10%) translateX(-13.5px);
+}
+
+.inputField input,
+.inputField span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 /* media queries */
 
 @media (max-width: 768px) {
