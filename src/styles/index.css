@@ -121,6 +121,7 @@ tbody tr td {
   justify-content: center;
   gap: 17px;
   font-size: 13px;
+  color: var(--color-gray-100);
 }
 
 /* Input */
