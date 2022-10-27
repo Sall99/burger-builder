@@ -1,4 +1,4 @@
-import { Input } from "components";
+import { Button, Input } from "components";
 import { Wrapper } from "./wrapper";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -7,23 +7,19 @@ import { SignInFormValues } from "@types";
 
 export const Signin = () => {
   const {
+    handleSubmit,
     register,
     formState: { errors },
-    getValues,
   } = useForm<SignInFormValues>({
     resolver: yupResolver(signInFormSchema),
   });
-  const onSubmit = () => {
-    const values = getValues();
-    console.log("getvalues", values);
-    console.log("errors:", errors);
-  };
+  const onSubmit = (data: SignInFormValues) => console.log(data);
 
   return (
     <div className="flex justify-center">
       <div>
-        <Wrapper h1="Sign In" onSubmit={onSubmit}>
-          <>
+        <Wrapper h1="Sign In">
+          <form onSubmit={handleSubmit(onSubmit)}>
             <Input
               name="email"
               type="email"
@@ -38,7 +34,12 @@ export const Signin = () => {
               register={register}
               errors={errors}
             />
-          </>
+            <Button
+              type="submit"
+              label="Create Account"
+              className="w-full h-10"
+            />
+          </form>
         </Wrapper>
       </div>
     </div>

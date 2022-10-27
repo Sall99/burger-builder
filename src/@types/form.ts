@@ -36,7 +36,6 @@ export interface InputProps {
 export interface WrapperProps {
   h1: string;
   children: JSX.Element;
-  onSubmit: (data: any) => void;
 }
 
 export type SignInFormValues = {

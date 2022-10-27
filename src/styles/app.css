@@ -619,6 +619,10 @@ video {
 .text-gray-100 {
   color: var(--color-gray-100);
 }
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
 
 :root {
   --color-primary-100: #fe9738;

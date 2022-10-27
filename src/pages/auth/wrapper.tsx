@@ -1,13 +1,11 @@
 import { FC } from "react";
-import { useForm } from "react-hook-form";
-import { Button, Icon } from "components";
+import { Icon } from "components";
 import { WrapperProps } from "@types";
 import { Link, useLocation } from "react-router-dom";
 import { publicRoutes } from "routes";
 
-export const Wrapper: FC<WrapperProps> = ({ children, h1, onSubmit }) => {
+export const Wrapper: FC<WrapperProps> = ({ children, h1 }) => {
   const { pathname } = useLocation();
-  const { handleSubmit } = useForm();
   return (
     <div className="m-14">
       <div>
@@ -28,10 +26,7 @@ export const Wrapper: FC<WrapperProps> = ({ children, h1, onSubmit }) => {
           <h1 className="mt-9 text-gray-400">- OR -</h1>
         </div>
       </div>
-      <form onSubmit={handleSubmit(onSubmit)}>
-        {children}
-        <Button label="Create Account" className="w-full h-10" />
-      </form>
+      <div>{children}</div>
       <h2 className="mt-5 text-xs text-gray-300 tracking-wider">
         {pathname === "/sign-up" ? (
           <span>
