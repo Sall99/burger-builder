@@ -9,17 +9,17 @@ export const Input: FC<InputProps> = ({
   required,
   name,
   register,
-  value,
+  errors,
 }) => {
-  console.log(required);
+  console.log(errors);
+
   return (
     <div className="inputField">
       <input
         type={type}
         {...(register ? register(name, { required }) : { name, required })}
-        value={value}
         className={clsx(
-          "border-b border-gray-200 w-full focus:outline-none mb-8 text-gray-100",
+          "border-b border-gray-200 w-full outline-none focus:outline-none mb-8 text-gray-100",
           [classname]
         )}
         placeholder=" "
