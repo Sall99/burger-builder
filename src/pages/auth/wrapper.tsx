@@ -7,13 +7,13 @@ import { publicRoutes } from "routes";
 export const Wrapper: FC<WrapperProps> = ({ children, h1 }) => {
   const { pathname } = useLocation();
   return (
-    <div className="m-14">
+    <div className="mt-14 w-full md:w-auto">
       <div>
         <h1 className="text-xl mb-6 tracking-wide text-primary-100 font-semibold">
           {h1}
         </h1>
         <div className="flex flex-col items-center">
-          <div className="flex items-center gap-9">
+          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-9">
             <button className="log-with-btn">
               <Icon name="googleIcon" />
               <span>Login with Google</span>

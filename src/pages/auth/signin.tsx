@@ -16,32 +16,30 @@ export const Signin = () => {
   const onSubmit = (data: SignInFormValues) => console.log(data);
 
   return (
-    <div className="flex justify-center">
-      <div>
-        <Wrapper h1="Sign In">
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <Input
-              name="email"
-              type="email"
-              placeholder="Email Address"
-              register={register}
-              errors={errors}
-            />
-            <Input
-              name="password"
-              type="password"
-              placeholder="Password"
-              register={register}
-              errors={errors}
-            />
-            <Button
-              type="submit"
-              label="Create Account"
-              className="w-full h-10"
-            />
-          </form>
-        </Wrapper>
-      </div>
+    <div className="flex justify-center px-8 sm:px-16">
+      <Wrapper h1="Sign In">
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <Input
+            name="email"
+            type="email"
+            placeholder="Email Address"
+            register={register}
+            errors={errors}
+          />
+          <Input
+            name="password"
+            type="password"
+            placeholder="Password"
+            register={register}
+            errors={errors}
+          />
+          <Button
+            type="submit"
+            label="Create Account"
+            className="w-full h-10"
+          />
+        </form>
+      </Wrapper>
     </div>
   );
 };

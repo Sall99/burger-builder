@@ -170,4 +170,7 @@ tbody tr td {
   .burger-builder {
     width: 100%;
   }
+  .log-with-btn {
+    width: 180px;
+  }
 }
