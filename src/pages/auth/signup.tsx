@@ -20,7 +20,7 @@ export const Signup = () => {
         <Wrapper h1="Create Account">
           <form onSubmit={handleSubmit(onSubmit)}>
             <Input
-              name="full-name"
+              name="fullName"
               type="text"
               placeholder="Full Name"
               register={register}
